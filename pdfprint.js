@@ -1,14 +1,5 @@
-var doc = new jsPDF();
-var specialElementHandlers = {
-    '#editor': function (element, renderer) {
-        return true;
-    }
-};
-
-$('#cmd').click(function () {
-    doc.fromHTML($('#content').html(), 15, 15, {
-        'width': 170,
-            'elementHandlers': specialElementHandlers
-    });
-    doc.save('dps-table-exort.pdf');
-});
+function main() {
+    var view = document.getElementById("view");
+    var exportPDF = document.getElementById("export-pdf");
+    exportPDF.onclick = (e) => html2pdf(view);
+}
