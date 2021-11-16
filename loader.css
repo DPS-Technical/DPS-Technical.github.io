@@ -1,0 +1,49 @@
+.spinner {
+    width: 100%;
+    height: 100%;
+    background-color: var(--less-dark-color);
+    position: absolute;
+
+  }
+  
+  .double-bounce1, .double-bounce2, .double-bounce3, .double-bounce4 {
+    width: 10vw;
+    height: 10vw;
+    border-radius: 10%;
+    background-color: #ffff;
+    opacity: 0.4;
+    position: fixed;
+    margin-top: 47vh;
+    margin-left: 47vw;
+    
+    -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+    animation: sk-bounce 2.0s infinite ease-in-out;
+  }
+  
+  .double-bounce2 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+  }
+  .double-bounce3 {
+    -webkit-animation-delay: -1.3s;
+    animation-delay: -1.3s;
+  }
+  .double-bounce3 {
+    -webkit-animation-delay: -1.7s;
+    animation-delay: -1.7s;
+  }
+  
+  @-webkit-keyframes sk-bounce {
+    0%, 100% { -webkit-transform: scale(0.0)}
+    50% { -webkit-transform: scale(1.0)}
+  }
+  
+  @keyframes sk-bounce {
+    0%, 100% { 
+      transform: scale(0.0);
+      -webkit-transform: scale(0.0);
+    } 50% { 
+      transform: scale(1.0);
+      -webkit-transform: scale(1.0);
+    }
+  }
