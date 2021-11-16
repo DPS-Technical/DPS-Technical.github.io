@@ -1,19 +1,98 @@
 @import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;600;700&display=swap');
 :root{
-    font-family: 'Arimo', sans-serif;
-    font-weight: 400;
+    --topheight: 100px;
 }
 *{
     font-family: 'Arimo', sans-serif;
     font-weight: 400;
     color: black;
 }
+body{
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+}
+
 table
         {
-            border: 1px solid #ccc;
+            margin-top: 5vh;
+            margin-left: auto;
+            margin-right: auto;
+            border: 1px ridge black;
+            border-collapse: collapse;
+            background-color: white;
             border-collapse: collapse;
         }
         table td
         {
+            border-radius: 20px;
             padding: 5px;
+            border: 1px solid black;
         }
+
+button{
+    display: inline-block;
+    padding:0.5em 3em;
+    border:0.16em solid black;
+    margin:0 0.3em 0.3em 0;
+    box-sizing: border-box;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-weight: 600;
+    color: black;
+    text-align:center;
+    transition: all 0.15s;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 20px;
+    height: 40px;
+    cursor: pointer;
+}
+button:hover{
+    filter: blur(.5px);
+    border-radius: 10px;
+}
+.butty{
+    display:inline-block;
+    padding:0.5em 3em;
+    border:0.16em solid black;
+    margin:0 0.3em 0.3em 0;
+    box-sizing: border-box;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-weight: 600;
+    color: black;
+    text-align:center;
+    transition: all 0.15s;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 20px;
+    height: 40px;
+    cursor: pointer;
+}
+.butty:hover{
+    filter: blur(.5px);
+    border-radius: 10px;
+}
+.topcont{
+    background-color: white;
+    width: 100vw;
+    margin-left: -10px;
+    height: 144px;
+    margin-top: -10px;
+}
+.top{
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    padding: 2vh;
+    border-radius: 20px;
+    border: 3px ridge white;
+    height: var(--topheight);
+}
+
+.top-logo{
+    width: auto;
+    height: var(--topheight);
+}
+.toputil{
+    display: relative;
+    width: 40%;
+    margin-left: 30%;
+    height: var(--topheight); 
+    margin-top: -75px;
+}
