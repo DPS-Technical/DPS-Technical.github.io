@@ -16,7 +16,6 @@ body{
 }
 
 table {
-    border:0.16em solid black;
     border-radius: 5px;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
     overflow: hidden;
@@ -38,8 +37,40 @@ table {
     background: #eeeeee;
   }
   
+  .tableclass tr:nth-child(1){
+    display: none;
+}
+  .tableclass tr:nth-child(3){
+    display: none;
+}
+.tableclass tr:nth-child(4){
+    display: none;
+}
           
-
+.tableclass tr td:nth-child(3){
+    display: none;
+}
+.tableclass tr td:nth-child(4){
+    display: none;
+}
+.tableclass tr td:nth-child(5){
+    display: none;
+}
+.tableclass tr td:nth-child(9){
+    display: none;
+}
+.tableclass tr td:nth-child(10){
+    display: none;
+}
+.tableclass tr td:nth-child(11){
+    display: none;
+}
+.tableclass tr td:nth-child(12){
+    display: none;
+}
+.tableclass tr td:nth-child(13){
+    display: none;
+}
 button{
     display: inline-block;
     padding:0.5em 3em;
@@ -107,6 +138,50 @@ button:hover{
     width: auto;
     height: 12vh;
     padding-bottom: 50px;
+    margin-right: 45%;
+}
+.output-top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.output-top:first-child{
+    margin-left: 0;
+}
+.output-top:last-child{
+    margin-right: 0;
+}
+.null{
+    font-family: 'Arimo', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    color: black;
+    border-radius: 20px;
+    border: 0;
+    background-color: whitesmoke;
+}
+.nullbox{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    border: 0;
+    background-color: whitesmoke;
+    width: 100%;
+    height: 40%;
+    font-family: 'Arimo', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    color: black;
+    border-radius: 20px;
+}
+.custom-box{
+    border: 0;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    width: 25vw;
+    height: 20vh;
 }
 .toputil{
     align-items: center;
@@ -121,17 +196,20 @@ button:hover{
     border: 2px solid black;
 }
 .tabledrop{
-    filter: drop-shadow(5px 5px 5px black)
-}
-.tablecont{
-    margin-left: auto;
-    margin-right: auto;
     width: 80%;
     padding: 50px;
     background-color:white;
-    margin-top: 10vh;
+    margin: 10vw;
     border-radius: 30px;
-
+    filter: drop-shadow(5px 5px 5px black)
+}
+.tablecont{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 hr {
     border: 10px solid black;

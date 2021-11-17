@@ -32,6 +32,7 @@ class TableCsv {
      */
     setHeader(headerColumns) {
       this.root.insertAdjacentHTML(
+
         "afterbegin",
         `
               <thead>
