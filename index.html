@@ -1,14 +1,17 @@
 <html>
 <head data-spy="scroll" data-target=".navbar">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="textstyle.css">
   <link rel="stylesheet" href="stylesheet.css">
   <link rel="stylesheet" href="loader.css">
   <link rel="icon" href="cropped-DPS-logo.png">
+
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
+<script src="PapaParse-5.0.2\papaparse.min.js"></script>
 
   <script src="pdfprint.js"></script>
-  <title>DPS Monitor</title>
+  <title>CSV to PDF</title>
  <script>
     $(window).on("load",function(){
     $(".spinner").fadeOut("slow");
@@ -20,10 +23,9 @@
 <div class=top>
   <div class="toputil">
   <script src="csvtable.js"></script>
-<input type="file" id="fileUpload" />
-<input class=butty type="button" id="upload" value="Upload" onclick="Upload()" />
-
+<input type="file" id="csvFileInput" />
 <button id="cmd">Download PDF</button>
+
 
 
 
@@ -31,11 +33,15 @@
 </div></div></div>
 <div class="tabledrop">
 <div class="tablecont" id="pdf">
+
+   <br />
   <img class=top-logo src="DPS-logo.png">
   </hr>
-  <div id="dvCSV"></div>
 
-</div>
+
+
 </div>
 </body>
 </html>
+
+  

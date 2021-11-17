@@ -1,0 +1,29 @@
+Portable Appliance Inspection and Test Record
+Customer Name:,""
+Site Address:,"revolution transport"
+Report Number:,"Exported Results 0002",,,,Report Date: 12/11/2021
+User:,"ROB",Instrument:,,,,Signature:,,,
+
+Appliance ID:,Appliance:,Date:,Class:,Building:,Location:,Fuse:,Visual:,E/B Res:,Insulation:,Sub_Leakage:,Polarity:,Pass/Fail
+"'3205","kettle lead",12/11/2021 13:20:55,Ex/Lead,"5","Office",13a,PASS,00.00 R,19.99 MR,N/A,GOOD,Pass
+"'3206","kettle lead",12/11/2021 13:24:26,Ex/Lead,"5","Office",13a,PASS,00.00 R,19.99 MR,N/A,GOOD,Pass
+"'3207","kettle lead",12/11/2021 13:29:54,Ex/Lead,"5","Office",10a,PASS,00.00 R,19.99 MR,N/A,GOOD,Pass
+"'3208","printer",12/11/2021 13:32:09,1,"5","Office",10a,PASS,00.13 R,19.99 MR,00.67 mA,N/A,Pass
+"'3209","scanner",12/11/2021 13:36:50,2,"5","Office",3a,PASS,N/A,19.99 MR,00.10 mA,N/A,Pass
+"'3210","multi plug",12/11/2021 13:38:31,Ex/Lead,"5","Office",13a,PASS,00.00 R,19.99 MR,N/A,GOOD,Pass
+"'3211","4 way 5m extention",12/11/2021 13:42:18,Ex/Lead,"5","Office",13a,PASS,00.02 R,19.99 MR,N/A,GOOD,Pass
+"'3212","Monitor",12/11/2021 13:46:08,2,"5","Office",3a,PASS,N/A,19.99 MR,00.10 mA,N/A,Pass
+"'3213","kettle lead",12/11/2021 13:51:14,Ex/Lead,"5","Office",10a,PASS,00.00 R,19.99 MR,N/A,GOOD,Pass
+"'3214","Computer Tower",12/11/2021 13:53:28,1,"5","Office",10a,PASS,00.00 R,19.99 MR,00.57 mA,N/A,Pass
+"'3215","lable printer",12/11/2021 13:56:12,Ex/Lead,"5","Office",5a,PASS,00.00 R,19.99 MR,N/A,GOOD,Pass
+"'3216","lable printer",12/11/2021 13:58:38,2,"5","Office",5a,PASS,N/A,19.99 MR,00.24 mA,N/A,Pass
+"'3217","Kettle",12/11/2021 14:03:12,2,"5","Kitchen",13a,PASS,N/A,19.99 MR,00.10 mA,N/A,Pass
+"'3218","toaster",12/11/2021 14:04:29,1,"5","Kitchen",13a,PASS,00.08 R,19.99 MR,00.10 mA,N/A,Pass
+"'3219","5 way extention",12/11/2021 14:08:22,Ex/Lead,"4","Kitchen",13a,PASS,00.01 R,19.99 MR,N/A,GOOD,Pass
+"'3220","microwave",12/11/2021 14:09:46,1,"4","Kitchen",13a,PASS,00.00 R,19.99 MR,00.74 mA,N/A,Pass
+"'3221","Fridge",12/11/2021 14:12:55,1,"4","Kitchen",13a,PASS,00.02 R,19.99 MR,00.10 mA,N/A,Pass
+"'3222","4 way extention",12/11/2021 14:14:55,Ex/Lead,"4","Kitchen",13a,PASS,00.04 R,19.99 MR,N/A,GOOD,Pass
+"'3223","water cooler",12/11/2021 14:17:20,1,"4","Kitchen",13a,PASS,00.05 R,19.99 MR,00.10 mA,N/A,Pass
+"'3224","kettle lead",12/11/2021 14:19:05,Ex/Lead,"4","Kitchen",13a,PASS,00.01 R,19.99 MR,N/A,GOOD,Pass
+"'3225","Hoover",12/11/2021 14:20:20,2,"4","Kitchen",13a,PASS,N/A,19.99 MR,00.10 mA,N/A,Pass
+"'3226","kettle lead",12/11/2021 14:25:28,Ex/Lead,"4","Warehouse",13a,PASS,00.00 R,19.99 MR,N/A,GOOD,Pass

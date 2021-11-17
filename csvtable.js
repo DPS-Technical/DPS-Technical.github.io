@@ -1,31 +1,84 @@
-function Upload() {
-    var fileUpload = document.getElementById("fileUpload");
-    var regex = /^([a-zA-Z0-9\s_\\.\-:])+(.csv|.txt)$/;
-    if (regex.test(fileUpload.value.toLowerCase())) {
-        if (typeof (FileReader) != "undefined") {
-            var reader = new FileReader();
-            reader.onload = function (e) {
-                var table = document.createElement("table");
-                var rows = e.target.result.split("\n");
-                for (var i = 0; i < rows.length; i++) {
-                    var cells = rows[i].split(",");
-                    if (cells.length > 1) {
-                        var row = table.insertRow(-1);
-                        for (var j = 0; j < cells.length; j++) {
-                            var cell = row.insertCell(-1);
-                            cell.innerHTML = '<input type="text" id="row'+2+'column'+4+'" value="'+cells[j]+'">';
-                        }
-                    }
-                }
-                var dvCSV = document.getElementById("dvCSV");
-                dvCSV.innerHTML = "";
-                dvCSV.appendChild(table);
-            }
-            reader.readAsText(fileUpload.files[0]);
-        } else {
-            alert("This browser does not support HTML5.");
-        }
-    } else {
-        alert("Please upload a valid CSV file.");
+class TableCsv {
+    /**
+     * @param {HTMLTableElement} root The table element which will display the CSV data.
+     */
+    constructor(root) {
+      this.root = root;
     }
-}
+  
+    /**
+     * Clears existing data in the table and replaces it with new data.
+     *
+     * @param {string[][]} data A 2D array of data to be used as the table body
+     * @param {string[]} headerColumns List of headings to be used
+     */
+    update(data, headerColumns = []) {
+      this.clear();
+      this.setHeader(headerColumns);
+      this.setBody(data);
+    }
+  
+    /**
+     * Clears all contents of the table (incl. the header).
+     */
+    clear() {
+      this.root.innerHTML = "";
+    }
+  
+    /**
+     * Sets the table header.
+     *
+     * @param {string[]} headerColumns List of headings to be used
+     */
+    setHeader(headerColumns) {
+      this.root.insertAdjacentHTML(
+        "afterbegin",
+        `
+              <thead>
+                  <tr>
+                      ${headerColumns.map((text) => `<th>${text}</th>`).join("")}
+                  </tr>
+              </thead>
+          `
+      );
+    }
+  
+    /**
+     * Sets the table body.
+     *
+     * @param {string[][]} data A 2D array of data to be used as the table body
+     */
+    setBody(data) {
+      const rowsHtml = data.map((row) => {
+        return `
+                  <tr>
+                      ${row.map((text) => `<td>${text}</td>`).join("")}
+                  </tr>
+              `;
+      });
+  
+      this.root.insertAdjacentHTML(
+        "beforeend",
+        `
+              <tbody>
+                  ${rowsHtml.join("")}
+              </tbody>
+          `
+      );
+    }
+  }
+  
+  const tableRoot = document.querySelector("#csvRoot");
+  const csvFileInput = document.querySelector("#csvFileInput");
+  const tableCsv = new TableCsv(tableRoot);
+  
+  csvFileInput.addEventListener("change", (e) => {
+    Papa.parse(csvFileInput.files[0], {
+      delimiter: ",",
+      skipEmptyLines: true,
+      complete: (results) => {
+        tableCsv.update(results.data.slice(1), results.data[0]);
+      }
+    });
+  });
+  
