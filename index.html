@@ -6,31 +6,21 @@
   <link rel="stylesheet" href="stylesheet.css">
   <link rel="stylesheet" href="loader.css">
   <link rel="icon" href="cropped-DPS-logo.png">
-
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="PapaParse-5.0.2\papaparse.min.js"></script>
-
+<script src="papaparse.min.js"></script>
   <script src="pdfprint.js"></script>
   <title>CSV to PDF</title>
- <script>
-    $(window).on("load",function(){
-    $(".spinner").fadeOut("slow");
-    });
-</script>
 </head>
 <body>
   <div class="topcont">
 <div class=top>
   <div class="toputil">
-  <script src="csvtable.js"></script>
 <input type="file" id="csvFileInput" />
 <button id="cmd">Download PDF</button>
-
-
-
-
-
 </div></div></div>
+
+
+
 <div class="tabledrop">
 <div class="tablecont" id="pdf">
 
@@ -38,6 +28,9 @@
   <img class=top-logo src="DPS-logo.png">
   </hr>
 
+  <table id="csvRoot"></table>
+  <script src="csvtable.js"></script>
+  
 
 
 </div>

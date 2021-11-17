@@ -16,18 +16,16 @@ body{
 }
 
 table {
-    border-collapse: collapse;
+    border:0.16em solid black;
     border-radius: 5px;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
     overflow: hidden;
-    font-family: "Quicksand", sans-serif;
-    font-weight: bold;
-    font-size: 14px;
+    font-size: 17px;
   }
   
   th {
-    background: #009578;
-    color: #ffffff;
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    color: black;
     text-align: left;
   }
   
@@ -107,8 +105,8 @@ button:hover{
 
 .top-logo{
     width: auto;
-    height: var(--topheight);
-    margin-left: 5%;
+    height: 12vh;
+    padding-bottom: 50px;
 }
 .toputil{
     align-items: center;
