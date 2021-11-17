@@ -1,8 +1,11 @@
        function Upload() {
             var fileUpload = document.getElementById("fileUpload");
             var regex = /^([a-zA-Z0-9\s_\\.\-:])+(.csv|.txt)$/;
+            
             if (regex.test(fileUpload.value.toLowerCase())) {
+                
                 if (typeof (FileReader) != "undefined") {
+                    
                     var reader = new FileReader();
                     reader.onload = function (e) {
                         var table = document.createElement("table");
@@ -15,13 +18,18 @@
                                     var cell = row.insertCell(-1);
                                     cell.innerHTML = cells[j];
                                 }
+
                             }
                         }
+                        
+                        
                         var dvCSV = document.getElementById("dvCSV");
                         dvCSV.innerHTML = "";
                         dvCSV.appendChild(table);
+                        
                     }
                     reader.readAsText(fileUpload.files[0]);
+                    
                 } else {
                     alert("This browser does not support HTML5.");
                 }

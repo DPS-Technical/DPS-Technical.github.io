@@ -4,6 +4,9 @@
   <link rel="stylesheet" href="stylesheet.css">
   <link rel="stylesheet" href="loader.css">
   <link rel="icon" href="cropped-DPS-logo.png">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
+  <script src="formatting.js"></script>
   <script src="pdfprint.js"></script>
   <title>DPS Monitor</title>
  <script>
@@ -15,21 +18,24 @@
 <body>
   <div class="topcont">
 <div class=top>
-  <img class=top-logo src="DPS-logo.png">
   <div class="toputil">
   <script src="csvtable.js"></script>
 <input type="file" id="fileUpload" />
 <input class=butty type="button" id="upload" value="Upload" onclick="Upload()" />
 
-<button onclick="saveDiv('pdf','Title')">Download PDF</button>
+<button id="generatePDF">Download PDF</button>
 
 
 
 
 </div></div></div>
-
-<div id="pdf">
+<div class="tabledrop">
+<div class="tablecont" id="pdf">
+  <img class=top-logo src="DPS-logo.png">
+  </hr>
   <div id="dvCSV"></div>
-  </div>
+
+</div>
+</div>
 </body>
 </html>
