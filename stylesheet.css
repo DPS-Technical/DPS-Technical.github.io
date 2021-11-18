@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;600;700&display=swap');
 :root{
     --topheight: 10vh;
+    --top-element-width: 25vh;
 }
 *{
     font-family: 'Arimo', sans-serif;
@@ -133,10 +134,9 @@ button:hover{
     filter: drop-shadow(5px 5px 5px black);
     width: 100%;
 }
-
 .top-logo{
-    width: auto;
-    height: 12vh;
+    width: var(--top-element-width);
+    height: auto;
     padding-bottom: 50px;
     margin-right: 45%;
 }
@@ -164,7 +164,7 @@ button:hover{
     width: 4fr;
 }
 .nullp{
-    width: 1fr;
+    width: var(--top-element-width);
 }
 .nullbox{
     display: flex;
@@ -178,7 +178,7 @@ button:hover{
     font-size: 25px;
     color: black;
     border-radius: 20px;
-    width: inherit;
+    width: var(--top-element-width);
 }
 .custom-box{
     border: 0;

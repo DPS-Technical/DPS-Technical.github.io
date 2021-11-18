@@ -37,40 +37,41 @@ table {
     background: #eeeeee;
   }
   
-  .tableclass tr:nth-child(1){
+table tr:nth-child(1){
     display: none;
 }
-  .tableclass tr:nth-child(3){
+table tr:nth-child(3){
     display: none;
 }
-.tableclass tr:nth-child(4){
+table tr:nth-child(4){
     display: none;
 }
           
-.tableclass tr td:nth-child(3){
+table tr td:nth-child(3){
     display: none;
 }
-.tableclass tr td:nth-child(4){
+table tr td:nth-child(4){
     display: none;
 }
-.tableclass tr td:nth-child(5){
+table tr td:nth-child(5){
     display: none;
 }
-.tableclass tr td:nth-child(9){
+table tr td:nth-child(9){
     display: none;
 }
-.tableclass tr td:nth-child(10){
+table tr td:nth-child(10){
     display: none;
 }
-.tableclass tr td:nth-child(11){
+table tr td:nth-child(11){
     display: none;
 }
-.tableclass tr td:nth-child(12){
+table tr td:nth-child(12){
     display: none;
 }
-.tableclass tr td:nth-child(13){
+table tr td:nth-child(13){
     display: none;
 }
+
 button{
     display: inline-block;
     padding:0.5em 3em;
