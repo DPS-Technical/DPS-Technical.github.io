@@ -79,6 +79,7 @@ class TableCsv {
       skipEmptyLines: true,
       complete: (results) => {
         tableCsv.update(results.data.slice(1), results.data[0]);
+        tableCsv.replace(/['"]+/g, '');
       }
     });
   });

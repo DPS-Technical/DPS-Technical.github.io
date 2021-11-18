@@ -8,7 +8,13 @@
   <link rel="icon" href="cropped-DPS-logo.png">
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="papaparse.min.js"></script>
-  <script src="pdfprint.js"></script>
+
+<script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/0.9.0rc1/jspdf.min.js"></script>
+<script src="pdfprint.js"></script>
+
+<link rel="stylesheet" type="text/css" href="print.css">
+
   <title>CSV to PDF</title>
 </head>
 <body>
@@ -16,31 +22,31 @@
 <div class=top>
   <div class="toputil">
 <input type="file" id="csvFileInput" />
-<button id="cmd">Download PDF</button>
+<a class="butty" onclick="print()">Download PDF</a>
 </div></div></div>
 
 
 
 <div class="tabledrop">
 
-
+<div id="newcont" >
    <div class="output-top">
   <img class=top-logo src="DPS-logo.png">
 
   <form class=custom-box>
-  <div class=nullbox><p>Date:  </p><input type="text" class=null placeholder="  Date"></div>
-  <div class="nullbox"><p>User:  </p><input type="text" class=null placeholder="  User"></div>
+  <div class=nullbox><p class="nullp">Date:  </p><input type="text" class=null placeholder="  Date"></div>
+  <div class="nullbox"><p class="nullp">User:  </p><input type="text" class=null placeholder="  User"></div>
 </form>
 </div>
 
 
-  <div class="tablecont" id="pdf">
-  <table class=tableclass id="csvRoot"></table>
+  <div class="tablecont" >
+  <table contenteditable class=tableclass id="csvRoot"></table contenteditable>
   <script src="csvtable.js"></script>
   
 </div>
 </div>
-
+</div>
 
 </body>
 </html>
