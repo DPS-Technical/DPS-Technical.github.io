@@ -2,9 +2,9 @@ function print() {
 
     var divText = document.getElementById("newcont").outerHTML;
     var divText = divText.replace(/['"]+/g, '');
-    var myWindow = window.open('', '', 'width=200,height=100');
-    var doc = myWindow.document;
-    doc.open();
+    var hidWindow = window.open('','');
+    var doc = hidWindow.document;
+    doc.open(left=1000,top=1000);
     doc.write('<html><head><title>Print it!</title><link rel="stylesheet" type="text/css" href="stylesheet.css"><link rel="stylesheet" type="text/css" href="pdfback.css"></head><body onload="window.print()">');
     doc.write(divText);
     doc.write('</body></html>');
