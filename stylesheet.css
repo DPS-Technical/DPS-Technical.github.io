@@ -8,13 +8,7 @@
     font-weight: 400;
     color: black;
 }
-body{
-    display: absolute;
-    padding: 0px;
-    align-items: center;
-    justify-content: center;
-    background-image: linear-gradient(to right, #434343 0%, black 100%);
-}
+
 
 table {
     border-radius: 5px;
@@ -38,40 +32,41 @@ table {
     background: #eeeeee;
   }
   
-  .tableclass tr:nth-child(1){
+table tr:nth-child(1){
     display: none;
 }
-  .tableclass tr:nth-child(3){
+table tr:nth-child(3){
     display: none;
 }
-.tableclass tr:nth-child(4){
+table tr:nth-child(4){
     display: none;
 }
           
-.tableclass tr td:nth-child(3){
+table tr td:nth-child(3){
     display: none;
 }
-.tableclass tr td:nth-child(4){
+table tr td:nth-child(4){
     display: none;
 }
-.tableclass tr td:nth-child(5){
+table tr td:nth-child(5){
     display: none;
 }
-.tableclass tr td:nth-child(9){
+table tr td:nth-child(9){
     display: none;
 }
-.tableclass tr td:nth-child(10){
+table tr td:nth-child(10){
     display: none;
 }
-.tableclass tr td:nth-child(11){
+table tr td:nth-child(11){
     display: none;
 }
-.tableclass tr td:nth-child(12){
+table tr td:nth-child(12){
     display: none;
 }
-.tableclass tr td:nth-child(13){
+table tr td:nth-child(13){
     display: none;
 }
+
 button{
     display: inline-block;
     padding:0.5em 3em;
@@ -135,25 +130,19 @@ button:hover{
     width: 100%;
 }
 .top-logo{
-    width: var(--top-element-width);
-    height: auto;
-    padding-bottom: 50px;
-    margin-right: 45%;
+    width: auto;
+    height: 70px;
+    padding-left: 50px;
 }
 .output-top{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: left;
+    justify-content: left;
     width: 100%;
-    margin-bottom: 10px;
-}
-.output-top:first-child{
-    margin-left: 0;
-}
-.output-top:last-child{
-    margin-right: 0;
+
 }
 .null{
+
     font-family: 'Arimo', sans-serif;
     font-weight: 400;
     font-size: 25px;
@@ -165,6 +154,7 @@ button:hover{
 }
 .nullp{
     width: var(--top-element-width);
+    margin-top: 5px;
 }
 .nullbox{
     display: flex;
@@ -175,17 +165,20 @@ button:hover{
     height: 40%;
     font-family: 'Arimo', sans-serif;
     font-weight: 400;
-    font-size: 25px;
+    font-size: 20px;
     color: black;
     border-radius: 20px;
     width: var(--top-element-width);
 }
 .custom-box{
+    height: 70px;
     border: 0;
     background-color: white;
     border-radius: 20px;
     width: 25vw;
-    height: 20vh;
+    height: auto;
+    margin-left: auto;
+    padding-right: 50px;
 }
 .toputil{
     align-items: center;
