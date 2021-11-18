@@ -16,6 +16,7 @@ class TableCsv {
       this.clear();
       this.setHeader(headerColumns);
       this.setBody(data);
+      this.replace(/\'/g, "");
     }
   
     /**

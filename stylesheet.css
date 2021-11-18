@@ -160,7 +160,7 @@ button:hover{
     color: black;
     border-radius: 20px;
     border: 0;
-    background-color: whitesmoke;
+    background-color: white;
     width: 4fr;
 }
 .nullp{
@@ -171,7 +171,7 @@ button:hover{
     align-items: left;
     justify-content: left;
     border: 0;
-    background-color: whitesmoke;
+    background-color: white;
     height: 40%;
     font-family: 'Arimo', sans-serif;
     font-weight: 400;
@@ -182,7 +182,7 @@ button:hover{
 }
 .custom-box{
     border: 0;
-    background-color: whitesmoke;
+    background-color: white;
     border-radius: 20px;
     width: 25vw;
     height: 20vh;
