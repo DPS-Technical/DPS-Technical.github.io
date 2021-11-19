@@ -22,7 +22,10 @@
   <div class="topcont">
 <div class=top>
   <div class="toputil">
-<input type="file" id="csvFileInput" />
+    <form>
+<input type="file" id="csvFileInput" style="display: none;"/>
+<input type="button" class=butty value="Upload CSV" onclick="document.getElementById('csvFileInput').click();" />
+</form>
 <a class="butty" onclick="print()">Download PDF</a>
 </div></div></div>
 
